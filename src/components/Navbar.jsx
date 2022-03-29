@@ -1,10 +1,11 @@
 import React from "react";
+import CardWidget from "./CardWidget";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand text-light" href="/">
           Navbar
         </a>
         <button
@@ -21,24 +22,34 @@ const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="/"
+              >
                 Home
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-light" href="/">
                 Features
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link text-light" href="/">
                 Pricing
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link disabled text-light" href="/">
+                Disabled
+              </a>
             </li>
           </ul>
+        </div>
+        <div class='col-6 d-flex align-items-center'>
+          <CardWidget />
+          <p class='text-light px-2 mb-0'>6</p>
         </div>
       </div>
     </nav>

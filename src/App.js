@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Image from './components/Image';
+import ItemListContainer from './components/ItemListContainer';
 import Navbar from './components/Navbar';
 import Personaje from './components/Personaje';
 import Welcome from './components/Welcome';
@@ -20,6 +21,9 @@ function App() {
 
       {/* //navbar */}
       <Navbar />
+      <div className='py-5'>
+        <ItemListContainer greeting={'Bienvenido'} />
+      </div>
       {/* //navbar */}
 
       {/* tarea */}
