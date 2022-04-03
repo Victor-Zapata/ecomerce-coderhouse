@@ -1,5 +1,5 @@
 import React from "react";
-import CardWidget from "./CardWidget";
+import CartWidget from "./CartWidget";
 
 const Navbar = () => {
   return (
@@ -48,7 +48,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div class='col-6 d-flex align-items-center'>
-          <CardWidget />
+          <CartWidget />
           <p class='text-light px-2 mb-0'>6</p>
         </div>
       </div>

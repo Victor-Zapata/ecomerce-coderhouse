@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardWidget = () => {
+const CartWidget = () => {
   return (
     <div>
       <svg
@@ -19,4 +19,4 @@ const CardWidget = () => {
   );
 };
 
-export default CardWidget;
+export default CartWidget;
