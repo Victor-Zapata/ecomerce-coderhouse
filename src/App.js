@@ -1,15 +1,16 @@
 import './App.css';
-import ItemListContainer from './components/ItemListContainer';
-import Navbar from './components/Navbar';
+import ConsultaBB from './components/ConsultaBB';
+import Home from './pages/Home';
 
 function App() {
 
   return (
     <>
-      <Navbar />
-      <div className='py-5'>
-        <ItemListContainer greeting={'Bienvenido'} />
-      </div>
+
+      <Home />
+      {/* //breaking bad */}
+      {/* <ConsultaBB /> */}
+      {/* //breaking bad */}
     </>
   );
 }

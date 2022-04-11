@@ -1,14 +1,9 @@
+import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
-import './App.css';
-import Footer from './components/Footer';
-import Image from './components/Image';
-import ItemListContainer from './components/ItemListContainer';
-import Navbar from './components/Navbar';
-import Personaje from './components/Personaje';
-import Welcome from './components/Welcome';
+import Personaje from './Personaje';
 
-function App() {
+function ConsultaBB() {
   const [nombre, setNombre] = useState('')
   const [personajes, setPersonajes] = useState([])
 
@@ -18,21 +13,6 @@ function App() {
   }
   return (
     <>
-
-      {/* //navbar */}
-      <Navbar />
-      <div className='py-5'>
-        <ItemListContainer greeting={'Bienvenido'} />
-      </div>
-      {/* //navbar */}
-
-      {/* tarea */}
-
-      <Welcome />
-      <Image />
-      <Footer />
-
-      {/* tarea */}
       <div>
         <form>
 
@@ -64,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default ConsultaBB;

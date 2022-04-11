@@ -8,7 +8,7 @@ const CartWidget = () => {
         width="22"
         height="22"
         fill="currentColor"
-        class="bi bi-cart3"
+        className="bi bi-cart3"
         viewBox="0 0 16 16"
         color="white"
         cursor={'pointer'}
