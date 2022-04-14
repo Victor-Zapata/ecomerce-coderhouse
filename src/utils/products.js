@@ -16,7 +16,7 @@ const products = [
       brandId: 95,
       packingId: null,
       category: {
-        name: "Sin Alcohol",
+        name: "Eléctricas",
         id: 9
       },
       brand: {
@@ -42,7 +42,7 @@ const products = [
       brandId: 95,
       packingId: null,
       category: {
-        name: "Sin Alcohol",
+        name: "Eléctricas",
         id: 9
       },
       brand: {
@@ -73,7 +73,7 @@ const products = [
       brandId: 10,
       packingId: null,
       category: {
-        name: "Vinos",
+        name: "Electroacústicas",
         id: 1
       },
       brand: {
@@ -99,7 +99,7 @@ const products = [
       brandId: 10,
       packingId: null,
       category: {
-        name: "Vinos",
+        name: "Electroacústica",
         id: 1
       },
       brand: {
@@ -121,11 +121,11 @@ const products = [
       sales: 0,
       createdAt: "2021-09-18T05:11:04.952Z",
       updatedAt: "2021-09-20T16:10:21.031Z",
-      categoryId: 1,
+      categoryId: 2,
       brandId: 10,
       packingId: null,
       category: {
-        name: "Vinos",
+        name: "MIDI",
         id: 1
       },
       brand: {
@@ -147,11 +147,11 @@ const products = [
       sales: 0,
       createdAt: "2021-09-18T05:11:04.952Z",
       updatedAt: "2021-09-20T16:10:21.030Z",
-      categoryId: 1,
+      categoryId: 2,
       brandId: 16,
       packingId: null,
       category: {
-        name: "Vinos",
+        name: "MIDI",
         id: 1
       },
       brand: {
@@ -173,11 +173,11 @@ const products = [
       sales: 0,
       createdAt: "2021-09-18T05:11:04.952Z",
       updatedAt: "2021-09-20T16:10:21.032Z",
-      categoryId: 1,
+      categoryId: 3,
       brandId: 16,
       packingId: null,
       category: {
-        name: "Vinos",
+        name: "Barroco",
         id: 1
       },
       brand: {
@@ -199,11 +199,11 @@ const products = [
       sales: 0,
       createdAt: "2021-09-18T05:11:04.952Z",
       updatedAt: "2021-09-20T16:10:21.032Z",
-      categoryId: 1,
+      categoryId: 3,
       brandId: 16,
       packingId: null,
       category: {
-        name: "Vinos",
+        name: "Barroco",
         id: 1
       },
       brand: {
@@ -229,7 +229,7 @@ const products = [
       brandId: 16,
       packingId: null,
       category: {
-        name: "Vinos",
+        name: "Barroco",
         id: 1
       },
       brand: {
@@ -255,7 +255,7 @@ const products = [
       brandId: 17,
       packingId: null,
       category: {
-        name: "Licores",
+        name: "italiana",
         id: 5
       },
       brand: {

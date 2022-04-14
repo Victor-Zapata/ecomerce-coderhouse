@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import customFetch from "../utils/customFetch";
 import { products } from "../utils/products";
 import ItemCount from "./ItemCount";
@@ -10,30 +11,40 @@ const ItemListContainer = ({ greeting }) => {
 
   const [datos, setDatos] = useState([]);
 
+  const params = useParams();
+
+  const { idCategory } = params;
+
   useEffect(() => {
     customFetch(2000, products)
-    .then(result => setDatos(result))
-    .catch(error => console.log(error))
-  }, [])
-  
+      .then((result) => {
+        if (idCategory) {
+          const datosFiltrados = result.filter(
+            (item) => idCategory === item.categoryId.toString()
+          );
+          setDatos(datosFiltrados);
+        } else {
+          setDatos(result);
+        }
+      })
+      .catch((error) => console.log(error));
+  }, [idCategory]);
 
   const onAdd = () => {
     alert("You have selected " + initial + " items.");
-}
+  };
 
   return (
     <div className="p-3">
       <div className="py-2">{greeting}</div>
       <div className="py-2">
-        <ItemCount 
-        stock={stock} 
-        initial={initial} 
-        setInitial={setInitial}
-        onAdd={onAdd} 
+        <ItemCount
+          stock={stock}
+          initial={initial}
+          setInitial={setInitial}
+          onAdd={onAdd}
         />
-        <ItemList 
-        datos={datos}
-        />
+        <ItemList datos={datos} />
       </div>
     </div>
   );

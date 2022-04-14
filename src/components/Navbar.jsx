@@ -2,11 +2,12 @@ import React from "react";
 import CartWidget from "./CartWidget";
 
 const Navbar = () => {
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-primary">
       <div className="container-fluid">
         <a className="navbar-brand text-light" href="/">
-          Navbar
+          Todo Guitarras
         </a>
         <button
           className="navbar-toggler"
@@ -25,31 +26,31 @@ const Navbar = () => {
               <a
                 className="nav-link active text-light"
                 aria-current="page"
-                href="/"
+                href="/category/9"
               >
-                Home
+                Eléctricas
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="/">
-                Features
+              <a className="nav-link text-light" href="/category/1">
+              Electroacústica
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="/">
-                Pricing
+              <a className="nav-link text-light" href="/category/2">
+                MIDI
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled text-light" href="/">
-                Disabled
+              <a className="nav-link text-light" href="/category/3">
+                Barroco
               </a>
             </li>
           </ul>
         </div>
-        <div className='col-6 d-flex align-items-center'>
+        <div className="col-6 d-flex align-items-center">
           <CartWidget />
-          <p className='text-light px-2 mb-0'>6</p>
+          <p className="text-light px-2 mb-0">6</p>
         </div>
       </div>
     </nav>
