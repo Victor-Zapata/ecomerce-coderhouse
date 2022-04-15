@@ -1,8 +1,8 @@
 const products = [
     {
       id: 30,
-      name: "Agua Con Gas 1,5 lts",
-      stock: 0,
+      name: "Guitarra acústica",
+      stock: 8,
       cost: 140,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
       capacity: 1500,
@@ -27,8 +27,8 @@ const products = [
     },
     {
       id: 29,
-      name: "Agua Sin Gas 1,5 lts",
-      stock: 100,
+      name: "Guitarra acústica",
+      stock: 9,
       cost: 140,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
       capacity: 1500,
@@ -58,8 +58,8 @@ const products = [
     },
     {
       id: 76,
-      name: "Alambrado Chardonnay 750 ml",
-      stock: 92,
+      name: "Guitarra italiana",
+      stock: 6,
       cost: 575,
       description: "Se muestra con tonos amarillo verdoso de intensidad media. En la nariz encontramos frutas blancas maduras, peras, manzanas y banana, frutas tropicales, con notas de la maduración en barricas sobre las borras como vainilla, manteca y miel. Buen volumen, complejo, maduro, con una entrada untuosa en la boca, buen desarrollo y largo final. Se repiten las notas frutales del aroma.",
       capacity: 750,
@@ -84,8 +84,8 @@ const products = [
     },
     {
       id: 170,
-      name: "Alambrado Malbec 750ml",
-      stock: 100,
+      name: "Guitarra eléctrica",
+      stock: 7,
       cost: 575,
       description: "Rojo violáceo, profundo y vivaz con visos azulados. Nariz de frutos rojos y negros como cerezas, cassis, ciruelas y moras, integrados con los aromas de maduración en barrica como vainilla, tabaco y chocolate. Entrada en boca sedosa, buena estructura, con una marcada presencia de frutas rojas, taninos amables y dulces, concluyendo en un largo final de boca.",
       capacity: 750,
@@ -110,8 +110,8 @@ const products = [
     },
     {
       id: 233,
-      name: "Alambrado Malbec 750 ml con Estuche",
-      stock: 100,
+      name: "Guitarra electroacústica",
+      stock: 11,
       cost: 765,
       description: "La linea Alambrado esta compuesta por vinos elegantes y de estilo moderno, donde se destacan claramente las características frutales de las variedades que los componen. Su paso por madera les otorgan una complejidad muy particular, acompañando de manera armónica y sutil la calidad obtenida desde el viñedo. Poseen un potencial de guarda de entre 4 y 6 años.\nAlambrado Malbec fue elaborado a partir de una cuidosa selección de uvas cosechadas de forma manual y criado en barricas de roble francés durante 10 meses.",
       capacity: 750,
@@ -136,7 +136,7 @@ const products = [
     },
     {
       id: 139,
-      name: "Altos del Plata Cabernet Sauvignon 750 ml",
+      name: "viola caipira",
       stock: 100,
       cost: 490,
       description: "Color: Rojo rubí con sutiles reflejos terracota. Aroma: Se destacan los aromas a frutas negras como higos, ciruelas y confitura de moras, armónicamente acompañados por notas de pimiento rojo, regaliz y tostado. Boca: Se percibe la untuosidad de la fruta madura junto a una elegante estructura tánica y persistencia en boca.",
@@ -162,7 +162,7 @@ const products = [
     },
     {
       id: 68,
-      name: "Altos del Plata Chardonnay 750 ml",
+      name: "Renacimiento",
       stock: 89,
       cost: 490,
       description: "Altos del Plata Chardonnay pertenece a la bodega Terrazas de los Andes. Su vino es de color amarillo dorado con destellos verdes. Su perfil fresco y frutado revela notas a flores blancas como jazmín y aromas a pera, durazno blanco y ananá. Acompañan sutiles notas tostadas y dulces como vainilla y miel. Presenta ligeros toques tostados y una acidez persistente.",
@@ -188,7 +188,7 @@ const products = [
     },
     {
       id: 222,
-      name: "Altos del Plata Malbec 375 ml",
+      name: "Barroco",
       stock: 100,
       cost: 300,
       description: "Altos del Plata Malbec pertenece a la bodega Terrazas de los Andes. Su vino es de color rojo con destellos morados. Predomina la presencia de aromas a fruta negra como ciruela y mora en armonía con un toque tostado. Se distinguen notas especiadas a pimienta blanca.",
@@ -240,8 +240,8 @@ const products = [
     },
     {
       id: 31,
-      name: "Amareto Disaronno 700 ml",
-      stock: 100,
+      name: "italian",
+      stock: 5,
       cost: 3150,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor libero, tincidunt id lacinia auctor, mattis elementum tortor. In eu bibendum magna, ac dignissim justo.",
       capacity: 700,
