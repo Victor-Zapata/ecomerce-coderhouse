@@ -1,16 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import useCart from "../hooks/useCart";
 import Cart from "./Cart";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ item }) => {
-  const { description, cost, image, stock } = item;
+  const { description, cost, image, stock, name, id } = item;
   const [initial, setInitial] = useState(0);
   const [checkout, setCheckout] = useState(false);
-
+  const { cart, setCart, addProduct } = useCart();
   const onAdd = () => {
     alert("You have selected " + initial + " items.");
     setCheckout(true);
+    addProduct({
+        description,
+        cost,
+        image,
+        stock,
+        name,
+        initial,
+        id
+      })
   };
 
   return (
@@ -28,7 +38,15 @@ const ItemDetail = ({ item }) => {
         </div>
         <div>
           {checkout ? (
-            <button className="btn btn-danger"><Link to='/cart' className="text-decoration-none" style={{color: 'white'}}>Checkout</Link></button>
+            <button className="btn btn-danger">
+              <Link
+                to="/cart"
+                className="text-decoration-none"
+                style={{ color: "white" }}
+              >
+                Checkout
+              </Link>
+            </button>
           ) : (
             <ItemCount
               stock={stock}

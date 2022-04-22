@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 
 const Navbar = () => {
@@ -6,9 +7,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-primary">
       <div className="container-fluid">
-        <a className="navbar-brand text-light" href="/">
+        <Link className="navbar-brand text-light" to={'/'}>
           Todo Guitarras
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,28 +24,28 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active text-light"
                 aria-current="page"
-                href="/category/9"
+                to={'/category/9'}
               >
                 Eléctricas
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="/category/1">
+              <Link className="nav-link text-light" to={'/category/1'}>
               Electroacústica
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="/category/2">
+              <Link className="nav-link text-light" to={'/category/2'}>
                 MIDI
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-light" href="/category/3">
+              <Link className="nav-link text-light" to={'/category/3'}>
                 Barroco
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
